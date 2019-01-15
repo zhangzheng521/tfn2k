@@ -47,10 +47,10 @@ typedef unsigned int u32;
 #define htonl(x)        (x)
 #define htons(x)        (x)
 #else
-unsigned long int htonl (unsigned long int hostlong);
+/*unsigned long int htonl (unsigned long int hostlong);
 unsigned short int htons (unsigned short int hostshort);
 unsigned long int ntohl (unsigned long int netlong);
-unsigned short int ntohs (unsigned short int netshort);
+unsigned short int ntohs (unsigned short int netshort);*/
 #endif
 
 #endif
