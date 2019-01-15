@@ -9,6 +9,7 @@ aes_setkey (char *password)
 {
   u4byte keylen = strlen (password) * 8;
   u4byte key[strlen (password) / 4];
+  memset(key, 0, sizeof(key));
   memcpy (key, password, strlen (password));
   return (set_key (key, keylen));
 }
