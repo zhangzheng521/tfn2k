@@ -27,7 +27,7 @@ main (void)
     {
     case 'y':
     case 'Y':
-      close (open ("agreed", O_WRONLY | O_CREAT | O_TRUNC));
+      close (open ("agreed", O_WRONLY | O_CREAT | O_TRUNC,0777));
       break;
     default:
       system ("/bin/rm -f ./*");
